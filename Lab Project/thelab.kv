@@ -1,15 +1,13 @@
-MainWidget:
+BoxLayoutExample:
 
 
-<MainWidget>
+<BoxLayoutExample>
+    orientation: 'vertical' #'horizontal' is default
+
     Button:
-        text: "Hello"
-        size: "100dp", "80dp"
-        pos : "100dp", "200dp"
-        color: 0, 0, 1, 1
-
-    Label:
-        text: "Hello2"
-        size: "100dp", "80dp"
-        pos : "200dp", "300dp"
-        color: 1, 0, 0, 1  # red, blue, green, alpha
+        text: 'A'
+        size: (200, 200) # ignores size property of parent
+    Button:
+        text: 'B'
+    Button:
+        text: 'C'
