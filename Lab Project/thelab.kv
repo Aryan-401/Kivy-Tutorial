@@ -6,8 +6,14 @@ BoxLayoutExample:
 
     Button:
         text: 'A'
-        size: (200, 200) # ignores size property of parent
+        size: ('200dp', '200dp') # ignores size property of parent
+        size_hint: (.8, .5) # default (1,1)
+        pos_hint: {'right': 1} # x, center_x, right || y, center_y, bottom
     Button:
         text: 'B'
+        size_hint: (None, None)
+        size: ('40dp', '40dp')  # isn't ignored since size_hint is (None, None)
     Button:
+        size_hint: (1, None)
+        height: '60dp'
         text: 'C'
