@@ -1,7 +1,14 @@
 from kivy.app import App
+from kivy.uix.anchorlayout import AnchorLayout
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.button import Button
 from kivy.uix.widget import Widget
+
+
+class AnchorLayoutExample(AnchorLayout):
+    pass
+
+
 class BoxLayoutExample(BoxLayout):
     # def __init__(self, **kwargs):
     #     super().__init__(**kwargs)
@@ -13,8 +20,11 @@ class BoxLayoutExample(BoxLayout):
     #     self.add_widget(b2)
     #     self.add_widget(b3)
     pass
+
+
 class MainWidget(Widget):
     pass
+
 
 class TheLabApp(App):
     pass

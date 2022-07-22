@@ -1,18 +1,39 @@
-BoxLayoutExample:
+AnchorLayoutExample:
+
+<AnchorLayoutExample>
+    #right, left, center
+    anchor_x: 'left'
+    #bottom top center
+    anchor_y: 'top'
+    BoxLayout:
+        size_hint: (0.2,0.3)
+        Button:
+            text: "A"
+
+        Button:
+            text: "B"
 
 
 <BoxLayoutExample>
-    orientation: 'vertical' #'horizontal' is default
 
     Button:
         text: 'A'
         size: ('200dp', '200dp') # ignores size property of parent
-        size_hint: (.8, .5) # default (1,1)
-        pos_hint: {'right': 1} # x, center_x, right || y, center_y, bottom
-    Button:
-        text: 'B'
-        size_hint: (None, None)
-        size: ('40dp', '40dp')  # isn't ignored since size_hint is (None, None)
+        size_hint: (.8, None) # default (1,1)
+        pos_hint: {'center_y': 0.5} # x, center_x, right || y, center_y, bottom
+
+    BoxLayout:
+        orientation: 'vertical'
+        spacing: '10dp'
+        Button:
+            text: 'A'
+
+        Button:
+            text: 'B'
+
+        Button:
+            text: 'C'
+
     Button:
         size_hint: (1, None)
         height: '60dp'
