@@ -13,7 +13,7 @@ class StackLayoutExample(StackLayout):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
         # self.orientation = 'lr-tb'
-        for i in range(10):
+        for i in range(100):
             # size = dp(100 + i * 10)
             size = dp(100)
             self.add_widget(Button(text=str(i+1), size_hint=(None, None), size=(size, size)))

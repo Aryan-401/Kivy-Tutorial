@@ -1,28 +1,12 @@
-StackLayoutExample:
+ScrollViewExample:
 
 <StackLayoutExample>
-#   orientation: "rl-bt" # "tb - top to bottom", "rl-tb" - right to left, top to bottom
-#   padding: ("20dp", "20dp", "20dp", "20dp")
-#   spacing: "20dp", "20dp"
-#   Button:
-#       text:"A"
-#       size_hint: (0.2, 0.3)
-#   Button:
-#       text:"B"
-#       size_hint: (0.2, 0.3)
-#   Button:
-#       text:"C"
-#       size_hint: (0.2, 0.3)
-#   Button:
-#       text:"D"
-#       size_hint: (0.2, 0.3)
-#   Button:
-#       text:"E"
-#       size_hint: (0.2, 0.3)
-#   Button:
-#       text:"F"
-#       size_hint: (0.2, 0.3)
 
+
+<ScrollViewExample@ScrollView>
+    StackLayoutExample:
+        size_hint: 1,None
+        height: self.minimum_height
 
 
 <GridLayoutExample@GridLayout>
